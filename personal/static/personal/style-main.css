@@ -1,0 +1,32 @@
+table, tr, th, td {
+    border: 1px black;
+}
+p{
+    text-align: center;
+    font-size: 115%;
+    color: black;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+}
+hr {
+    border: 5px solid hotpink;
+    border-radius: 100px;
+    height: 10px;
+}
+i{
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 110%;
+}
+img{
+    align: middle;
+    float: left;
+}
+button{
+  align-content: center;
+}
+li{
+    display: inline;
+}

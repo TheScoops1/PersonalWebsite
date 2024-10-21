@@ -1,0 +1,20 @@
+body {
+    background: cornsilk;
+}
+hr {
+    border: 5px solid hotpink;
+    border-radius: 100px;
+    height: 2px;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 1000px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Pictures {
+}
