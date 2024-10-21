@@ -3,7 +3,7 @@
 {% load static %}
 
 <link rel="stylesheet" href="{% static 'personal/style-pretty.css' %}">
-<script src="{% static "personal/pretty.js" %}"%}></script>
+<script type="text/javascript" src="{% static "personal/pretty.js" %}"></script>
 
 <head>
     <title>The Pretty portion of the website</title>
@@ -16,40 +16,42 @@
 </body>
 
 <hr>
-<div class="Pictures">
-    <div class="First Picture">
-        <div class="NumberText">1 / 4</div>
+
+<div class="pictureContainer">
+    <div class="picture fade">
+        <div class="numbertext">1 / 4</div>
         <img src="{% static "personal/images/Lupins-Of-Lake-Tekapo.jpg" %}">
-        <div class="ImageText">The Lupins of Lake Tekapo</div>
+        <div class="text">The Lupins of Lake Tekapo</div>
     </div>
 
-    <div class="Second Picture">
-        <div class="NumberText">2 / 4</div>
+    <div class="picture fade">
+        <div class="numbertext">2 / 4</div>
         <img src="{% static "personal/images/Maligne-Lake-Spirit-Island.jpg" %}">
-        <div class="ImageText">Spirit Island on Maligne Lake</div>
+        <div class="text">Spirit Island on Maligne Lake</div>
     </div>
 
-    <div class="Third Picture">
-        <div class="NumberText">3 / 4</div>
+    <div class="picture fade">
+        <div class="numbertext">3 / 4</div>
         <img src="{% static "personal/images/Paria-Rimrocks-Utah.jpg" %}">
-        <div class="ImageText">The Paria Rimrocks in Utah</div>
+        <div class="text">The Paria Rimrocks in Utah</div>
     </div>
 
-    <div class="Fourth Picture">
-        <div class="NumberText">4 / 4</div>
-        <img src="{% static "personal/images/Zelenchi-Springs-Solvenia.jpg" %}">
-        <div class="ImageText">Zelenchi Springs in Solvenia</div>
+    <div class="picture fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="{% static "personal/images/Zelenchi-Springs-Solvenia.jpg" %}" style>
+        <div class="text">Zelenchi Springs in Solvenia</div>
     </div>
 
-    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
-    <a class="next" onclick="plisSlide(+1)">&#10095;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
-<div class="CirclesUnderPictures">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+<div class="circles" style="text-align: center">
+    <span class="dot" onclick="currentSlides(1)"></span>
+    <span class="dot" onclick="currentSlides(2)"></span>
+    <span class="dot" onclick="currentSlides(3)"></span>
+    <span class="dot" onclick="currentSlides(4)"></span>
 </div>
 
 </html>
