@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href={% static "personal/favicon.ico" %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'personal/navBar.css' %}">
+    <link rel="stylesheet" href="{% static 'personal/style-personal-achievements.css' %}">
+    <script src="{% static 'personal/personal.js' %}"></script>
+</head>
+
+<body style="background-color: wheat">
+
+<div class="topnav" id="myTopnav">
+    <a href="/personal/">Home</a>
+    <a>Projects</a>
+    <a href="" class="active">Personal Achievments</a>
+    <a href="">Life With Jordan</a>
+    <a href="/personal/pretty">Pretty times</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+        <i class="fade fa-bars"></i>
+    </a>
+</div>
+
+<hr>
+<div class="calExplanation">
+    <div>
+        <img class="calcPic" src="{% static 'personal/images/calcfunctionPicture.png' %}">
+    </div>
+    <div class="calcTitle">
+        <h3>Taught my self to code Calculus functions via volatility for a currency trading bot</h3>
+    </div>
+    <div class="calcText">
+        <p>To the right is a self built function that takes in a </p>
+    </div>
+    <hr class="calcDivider">
+</div>
+<hr class="calcDivider">
+</body>
+
+</html>

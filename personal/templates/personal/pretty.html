@@ -1,19 +1,19 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
 
 {% load static %}
-
-<link rel="stylesheet" href="{% static 'personal/style-pretty.css' %}">
-<script type="text/javascript" src="{% static "personal/pretty.js" %}"></script>
+<html lang="en">
 
 <head>
     <title>The Pretty portion of the website</title>
     <link rel="icon" type="image/x-icon" href={% static "personal/favicon.ico" %}>
+    <link rel="stylesheet" href="{% static 'personal/style-pretty.css' %}">
+    <script src="{% static 'personal/pretty.js' %}"></script>
 </head>
+<body>
 <hr>
 
-<body>
+
 <h1>The Pretty portion of the website</h1>
-</body>
 
 <hr>
 
@@ -48,10 +48,11 @@
 </div>
 <br>
 <div class="circles" style="text-align: center">
-    <span class="dot" onclick="currentSlides(1)"></span>
-    <span class="dot" onclick="currentSlides(2)"></span>
-    <span class="dot" onclick="currentSlides(3)"></span>
-    <span class="dot" onclick="currentSlides(4)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
+</body>
 </html>

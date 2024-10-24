@@ -1,0 +1,38 @@
+/* css formating for Calc Pic */
+hr {
+    /* previous color #D498D5 */
+    border: 6px solid #BF88C0;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1700px;
+}
+/* formatting for the heading2s */
+h3 {
+    float: left;
+    display: block;
+    padding: 9px;
+    border: 5px solid #BF88C0;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 50px;
+
+}
+
+.calcText {
+}
+.calcPic {
+    max-width: 975px;
+    max-height: 1100px;
+    border-radius: 20px;
+    float: right;
+    display: block;
+}
+.calcDivider {
+    float: left;
+    max-width: 500px;
+    display: block;
+}

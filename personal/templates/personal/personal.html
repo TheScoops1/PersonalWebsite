@@ -2,74 +2,49 @@
 
 {% load static %}
 
-<link rel="stylesheet" href="{% static "personal/style-main.css" %}">
 <head>
     <title>Scoops Personal Website</title>
     <link rel="icon" type="image/x-icon" href={% static "personal/favicon.ico" %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static "personal/style-main.css" %}">
+    <link rel="stylesheet" href="{% static 'personal/navBar.css' %}">
+    <script src="{% static 'personal/personal.js' %}"></script>
 </head>
 
 <script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "{% static 'personal/images/IceCreamPhoto.jpg' %}"
-  } else {
-    pic = "{% static 'personal/images/VanillaIceCream.webp' %}"
-  }
-  document.getElementById('myImage').src = pic;
-}
+
 </script>
 
 
 <body style="background-color: wheat">
 <!-- This is an example Comment -->
 
-<li>
+<div class="topnav" id="myTopnav">
+    <a href="/personal/" class="active">Home</a>
     <a>Projects</a>
-    <a href="">Personal Achievments</a>
+    <a href="/personal/personal_achievements">Personal Achievments</a>
     <a href="">Life With Jordan</a>
-    <a href='/personal/pretty/' %}>Pretty times</a>
-</li>
+    <a href="/personal/pretty">Pretty times</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+        <i class="fade fa-bars"></i>
+    </a>
+</div>
 
 <hr>
 
 <h1>Scoop's Personal Website Home Page</h1>
 
-<hr>
+<hr class="imgHr">
 
 <img id="myImage" src="{% static 'personal/images/IceCreamPhoto.jpg' %}" alt="Ice Cream Scoop Scooping up Chocolate Ice Cream">
 
-<p>My Personal Goal is to : <br><q><i>Love the world more than the maximum amount of love the world might send me</i></q></p>
+<hr class="imgHr">
 
-<p>As well as<br><q><i>Acquire all the knowledge that will fit in my brain; Knowledge is power</i></q></p>
+<p>My Personal Goals : <br><b><i><q>Love the world more than the world might love me</q></i></b></p>
+
+<p>and<br><b><i><q>Acquire all the knowledge that will fit in my brain; Knowledge is power</q></i></b></p>
 
 <hr>
-
-<button type="button" onclick="light(0)">Chocolate Ice Cream</button>
-<button type="button" onclick="light(1)">Vanilla Ice Cream</button>
-
-<br>
 
 </body>
-
-<hr>
-
-<table>
-    <tr>
-        <th>test1</th>
-        <th>test2</th>
-        <th>test3</th>
-    </tr>
-    <tr>
-        <td>this is test1 first row</td>
-        <td>this is test2 first row</td>
-        <td>this is test3 first row</td>
-    </tr>
-    <tr>
-        <td>this is test1 last row</td>
-        <td>this is test2 last row</td>
-        <td>this is test3 last row</td>
-    </tr>
-</table>
-
 </html>
