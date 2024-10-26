@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
+
+<html lang="en">
+
 <head>
     <link rel="icon" type="image/x-icon" href={% static "personal/favicon.ico" %}>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,32 +12,73 @@
 </head>
 
 <body style="background-color: wheat">
+    <div class="topnav" id="myTopnav">
+        <a href="/personal/">Home</a>
+        <a>Projects</a>
+        <a href="" class="active">Personal Achievments</a>
+        <a href="">Life With Jordan</a>
+        <a href="/personal/pretty">Pretty times</a>
+        <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+            <i class="fade fa-bars"></i>
+        </a>
+    </div>
 
-<div class="topnav" id="myTopnav">
-    <a href="/personal/">Home</a>
-    <a>Projects</a>
-    <a href="" class="active">Personal Achievments</a>
-    <a href="">Life With Jordan</a>
-    <a href="/personal/pretty">Pretty times</a>
-    <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
-        <i class="fade fa-bars"></i>
-    </a>
-</div>
+    <hr>
 
-<hr>
-<div class="calExplanation">
-    <div>
-        <img class="calcPic" src="{% static 'personal/images/calcfunctionPicture.png' %}">
+    <div class="calcExplanation">
+        <h2>Taught my self to code Calculus functions via volatility for a currency trading bot</h2>
+        <div class="calcExplanationRow">
+            <div class="calcExplanationColumn1">
+                <img class="calcPic" src="{% static 'personal/images/calcfunctionPicture.png' %}">
+            </div>
+            <div class="calcExplanationColumn2">
+                <span class="calcText">To the right is a self built function that takes in a list full of prices and the times that price itself was taken. <br>
+                <br>The function will then go through the list, calculate the volatility price, which is (current price - average price)^2, And then proceeds to divide by the length of the list up until that price point. The result is the derivative AKA (in terms of finance) as the volatility.<br>
+                <br>We then do this for multiple time points, such as 5 min, 15 min, 1 hour, 3 hour, 6 hour, 12 hour, 1 doy, 2 day, and 1 week<br>
+                <br>But if there is only one item in the list, then we set all of our volatility numbers to 0  so as to avoid confusion in the other logic of our program</span></li>
+            </div>
+        </div>
     </div>
-    <div class="calcTitle">
-        <h3>Taught my self to code Calculus functions via volatility for a currency trading bot</h3>
+
+    <hr>
+    <div class="websiteExplanation">
+        <h2 class="djangoWebsiteTitle">This is my self-taught Django progress for this website specifically</h2>
+        <div class="djangoExplanations1Row">
+            <div class="djangoCode1TextColumn">
+                <p>To the right, we have our URL set up<br>
+                <br>At the moment, we only have four URLS,<br>
+                    /personal<br>
+                    /personal/pretty<br>
+                    /personal/pretty/tests<br>
+                    /personal/personal_achievements<br>
+                    These four URLs lead to the various tabs at the top of the screen</p>
+            </div>
+            <div class="djangoCodePic1Column">
+                <img class="djangoCodePic1" src="{% static 'personal/images/websiteDjangoUrlsCodePic.png' %}">
+            </div>
+        </div>
+        <div class="djangoExplanations2Row">
+            <div class="djangoCodePic2Column">
+                <img class="djangoCodePic2" src="{% static 'personal/images/websiteDjangoViewsCodePic.png' %}">
+            </div>
+            <div class="djangoCode2TextColumn">
+                <p>To the left are currently all the views made for this website.<br>
+                <br> Right now there is only four views needed. the four views are for each of the tabs at the top I have worked out.<br>
+                <br>the four views are personal_website which is for the main page,
+                    pretty_website which is for the pretty tab (this is mostly a practice tab for javascript),
+                    pretty_test_website which is a test site to experiment with,
+                    and the personal_achievements view which is for this current webpage</p>
+            </div>
+        </div>
+        <div class="djangoExplanations3Row">
+            <div class="djangoCode3TextColumn">
+                <p>To the right is a snipit of the HTML I wrote for this webpage in particular</p>
+            </div>
+            <div class="djangoCodePic3Column">
+                <img class="djangoCodePic3" src="{% static 'personal/images/websiteHtmlCodePic.png' %}">
+            </div>
+        </div>
     </div>
-    <div class="calcText">
-        <p>To the right is a self built function that takes in a </p>
-    </div>
-    <hr class="calcDivider">
-</div>
-<hr class="calcDivider">
 </body>
 
 </html>
