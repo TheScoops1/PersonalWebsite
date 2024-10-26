@@ -17,7 +17,6 @@
         <a>Projects</a>
         <a href="" class="active">Personal Achievments</a>
         <a href="">Life With Jordan</a>
-        <a href="/personal/pretty">Pretty times</a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
             <i class="fade fa-bars"></i>
         </a>
@@ -43,8 +42,8 @@
     <hr>
     <div class="websiteExplanation">
         <h2 class="djangoWebsiteTitle">This is my self-taught Django progress for this website specifically</h2>
-        <div class="djangoExplanations1Row">
-            <div class="djangoCode1TextColumn">
+        <div class="djangoExplanationsRow1">
+            <div class="djangoCodeTextColumn1">
                 <p>To the right, we have our URL set up<br>
                 <br>At the moment, we only have four URLS,<br>
                     /personal<br>
@@ -53,15 +52,16 @@
                     /personal/personal_achievements<br>
                     These four URLs lead to the various tabs at the top of the screen</p>
             </div>
-            <div class="djangoCodePic1Column">
+            <div class="djangoCodePicColumn1">
                 <img class="djangoCodePic1" src="{% static 'personal/images/websiteDjangoUrlsCodePic.png' %}">
             </div>
         </div>
-        <div class="djangoExplanations2Row">
-            <div class="djangoCodePic2Column">
+
+        <div class="djangoExplanationsRow2">
+            <div class="djangoCodePicColumn2">
                 <img class="djangoCodePic2" src="{% static 'personal/images/websiteDjangoViewsCodePic.png' %}">
             </div>
-            <div class="djangoCode2TextColumn">
+            <div class="djangoCodeTextColumn2">
                 <p>To the left are currently all the views made for this website.<br>
                 <br> Right now there is only four views needed. the four views are for each of the tabs at the top I have worked out.<br>
                 <br>the four views are personal_website which is for the main page,
@@ -70,15 +70,39 @@
                     and the personal_achievements view which is for this current webpage</p>
             </div>
         </div>
-        <div class="djangoExplanations3Row">
-            <div class="djangoCode3TextColumn">
+
+        <div class="djangoExplanationsRow3">
+            <div class="djangoCodeTextColumn3">
                 <p>To the right is a snipit of the HTML I wrote for this webpage in particular</p>
             </div>
-            <div class="djangoCodePic3Column">
+            <div class="djangoCodePicColumn3">
                 <img class="djangoCodePic3" src="{% static 'personal/images/websiteHtmlCodePic.png' %}">
             </div>
         </div>
+
+        <div class="djangoExplanationsRow4">
+            <div class="djangoCodePicColumn4">
+                <img class="djangoCodePic4" src="{% static 'personal/images/websiteNavBarFunctionPic.png' %}">
+            </div>
+            <div class="djangoCodeTextColumn4">
+                <p>This is the primary function used in this website ATM.<br>
+                <br>This is specially for the nav bar at the top hence the name.<br>
+                <br>Trying to add more and find more reasons to add more JS to this website</p>
+            </div>
+        </div>
+        <div class="djangoExplanationsRow5">
+            <div class="djangoCodeTextColumn5">
+                <p>To the right is the CSS file I made for this portion of the website specially.<br>
+                <br>I labeled each div and p with classes so we can speicflly format each piece as needed, but kept general headings, such as the h2, generic so we can maintain a consistent format through the while file.</p>
+            </div>
+            <div class="djangoCodePicColumn5">
+                <img class="djangoCodePic5" src="{% static 'personal/images/websiteCssCodePic.png' %}">
+            </div>
+        </div>
     </div>
+
+    <hr>
+
 </body>
 
 </html>

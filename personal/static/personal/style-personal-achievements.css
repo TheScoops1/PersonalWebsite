@@ -22,11 +22,15 @@ h2 {
 
 .calcExplanationRow {
     display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
 }
 
 .calcExplanationColumn1 {
     float: left;
+    margin: auto;
 }
 /* formating for the first code image on the page */
 .calcPic {
@@ -34,7 +38,7 @@ h2 {
     max-height: 950px;
     border-radius: 20px;
     float: left;
-    margin-left: 100px;
+    margin-left: auto;
     margin-right: auto;
 }
 .calcExplanationColumn2 {
@@ -46,11 +50,12 @@ h2 {
 /* formating for the <p> under the calc title */
 .calcText {
     float: left;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
     border: 10px solid #BF88C0;
     border-radius: 10px;
     padding: 15px;
+    max-width: 600px;
     font-size: 135%;
 }
 .djangoWebsiteTitle {
@@ -70,7 +75,7 @@ h2 {
     font-size: 135%;
 }
 
-.djangoExplanations1Row {
+.djangoExplanationsRow1 {
     display: flex;
     justify-content: space-around;
     margin-left: auto;
@@ -78,7 +83,23 @@ h2 {
     margin-bottom: 50px;
 }
 
-.djangoExplanations2Row {
+.djangoExplanationsRow2 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+}
+
+.djangoExplanationsRow3 {
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+}
+
+.djangoExplanationsRow4 {
     display: flex;
     justify-content: space-around;
     margin-right: auto;
@@ -86,21 +107,21 @@ h2 {
     margin-bottom: 50px;
 }
 
-.djangoExplanations3Row {
+.djangoExplanationsRow5 {
     display: flex;
     justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 /* formatting sizing for the first Djanago code picture */
 .djangoCodePic1 {
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 20px;
 }
 /* formatting sizing for the second Djanago code picture */
 .djangoCodePic2 {
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 20px;
 }
 
@@ -109,49 +130,81 @@ h2 {
     border-radius: 20px;
 }
 
-.djangoCodePic1Column {
+.djangoCodePic4 {
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.djangoCodePic5 {
+    max-width: 800px;
+    max-height: 900px;
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.3);
+    margin: auto;
+}
+.djangoCodePicColumn1 {
     text-align: center;
     float: right;
     margin: auto;
-    margin-top: 75px;
 }
 
-.djangoCode1TextColumn {
+.djangoCodeTextColumn1 {
     float: left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
+    margin: auto;
     max-width: 600px;
     font-size: 135%;
 }
 
-.djangoCodePic2Column {
+.djangoCodePicColumn2 {
     float: left;
     margin: auto;
 }
 
-.djangoCode2TextColumn {
+.djangoCodeTextColumn2 {
     float: right;
-    margin-right: 160px;
     margin: auto;
     max-width: 600px;
     font-size: 135%;
 }
 
-.djangoCodePic3Column {
+.djangoCodePicColumn3 {
     float: right;
-    margin-left: auto;
-    margin-right: 120px;
+    margin: auto;
 }
 
-.djangoCode3TextColumn {
+.djangoCodeTextColumn3 {
     float: left;
     margin: auto;
-    margin-left: 145px;
     max-width: 600px;
     font-size: 135%;
 }
 
+.djangoCodePicColumn4 {
+    float: left;
+    margin: auto;
+}
+
+.djangoCodeTextColumn4 {
+    float: right;
+    margin: auto;
+    max-width: 600px;
+    font-size: 135%;
+}
+
+.djangoCodePicColumn5{
+    float: left;
+    margin: auto;
+}
+
+.djangoCodeTextColumn5 {
+    float: right;
+    margin: auto;
+    max-width: 600px;
+    font-size: 135%;
+}
 p {
     padding: 15px;
     border: 10px solid #BF88C0;
